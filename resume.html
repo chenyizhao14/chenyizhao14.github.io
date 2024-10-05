@@ -1,16 +1,18 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Resume</title>
     <link rel="stylesheet" href="styles.css" />
-
   </head>
   <body>
+    <!-- Navbar -->
     <nav class="navbar">
       <h1 class="logo">
-        <a href="index.html">Personal website</a>
+        <a href="index.html">Personal Website</a>
       </h1>
-      <a href="resume.pdf" download >Download Resume</a>
+      <a href="resume.pdf" download class="button">Download Resume</a>
       <ul class="nav-list">
         <li><a href="index.html">Home</a></li>
         <li><a href="blog.html">Blog</a></li>
@@ -19,78 +21,124 @@
         <li><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
-    <main>
-      <div class="resume"></div>
-      <h1>Resume</h1>
 
+    <!-- Main Content -->
+    <main>
+      <section class="resume-header">
+        <h1>Resume</h1>
+      </section>
+
+      <!-- Education Section -->
       <section class="section">
         <h2 class="section-title">Education</h2>
         <div class="entry">
-            <h3 class="entry-title">
-                California Polytechnic State University - San Luis Obispo, CA 
-            </h3>
-            <p class="entry-description">
-                Bachelor of Science in Computer Science, Minor in Math
-            </p>
-            <p>Expected Graduation June 2026</p>
+          <h3 class="entry-title">
+            California Polytechnic State University - San Luis Obispo, CA
+          </h3>
+          <p class="entry-description">
+            Bachelor of Science in Computer Science, Minor in Math<br />
+            <strong>Expected Graduation:</strong> June 2026
+          </p>
         </div>
       </section>
 
+      <!-- Experience Section -->
       <section class="section">
         <h2 class="section-title">Experience</h2>
         <div class="entry">
-            <h3 class="entry-title">
-                Computer Science Tutor
-            </h3>
-            <p class="entry-description">
-                California Polytechnic State University - San Luis Obispo, CA	| October 2023 - Present
-                <ul>
-                    <li>Provide tutoring to students on subjects incorporating data structures in Python, 
-                        object-oriented programming in Java, and the foundational principles of computer science
-                    </li>
-                    <li>Facilitate productive learning experiences, 
-                        demonstrate the ability to simplify complex technical topics, 
-                        and encourage students to develop problem-solving skills
-                    </li>
-                    <li>
-                        Strive for excellence in guiding students through challenging coursework, 
-                        leveraging effective communication, and adaptability to meet diverse learning needs
-                    </li>
-                </ul>
-            </p>
+          <h3 class="entry-title">Computer Science Tutor</h3>
+          <p class="entry-description">
+            California Polytechnic State University - San Luis Obispo, CA |
+            October 2023 - Present
+          </p>
+          <ul class="entry-list">
+            <li>
+              Provide tutoring to students on subjects such as data structures
+              in Python, object-oriented programming in Java, and foundational
+              computer science principles.
+            </li>
+            <li>
+              Facilitate productive learning experiences, simplify complex
+              technical topics, and encourage students to develop
+              problem-solving skills.
+            </li>
+            <li>
+              Guide students through challenging coursework using effective
+              communication and adaptability to meet diverse learning needs.
+            </li>
+          </ul>
         </div>
       </section>
 
+      <!-- Skills Section -->
       <section class="section">
         <h2 class="section-title">Skills</h2>
-        <ul class="class-list">
-            <li>Languages: Python, Java, C, Javascript, Assembly</li>
-            <li>Back End: MongoDB, MySQL, REST API</li>
-            <li>Libraries: NodeJS, React, Express</li>
+        <ul class="skills-list">
+          <li>
+            <strong>Languages:</strong> Python, Java, C, JavaScript, Assembly
+          </li>
+          <li><strong>Back End:</strong> MongoDB, MySQL, REST API</li>
+          <li><strong>Libraries/Frameworks:</strong> NodeJS, React, Express</li>
         </ul>
       </section>
 
+      <!-- Projects Section -->
       <section class="section">
         <h2 class="section-title">Projects</h2>
         <div class="entry">
-            <h3 class="entry-title">
-                <p class="entry-description"></p>
-            </h3>
+          <h3 class="entry-title">Portfolio Website</h3>
+          <p class="entry-description">
+            Designed and developed a personal portfolio website using HTML, CSS,
+            and JavaScript to showcase projects and skills. Integrated a blog
+            section and contact form with basic form validation.
+          </p>
+        </div>
+        <div class="entry">
+          <h3 class="entry-title">Python Data Analysis Tool</h3>
+          <p class="entry-description">
+            Created a Python tool to automate data analysis tasks, including
+            reading large CSV files, performing statistical calculations, and
+            generating reports.
+          </p>
         </div>
       </section>
 
-      
+      <!-- Coursework Section -->
       <section class="section">
         <h2 class="section-title">Coursework</h2>
-        <ul class="course-list"></ul>
+        <ul class="course-list">
+          <li>Data Structures and Algorithms</li>
+          <li>Computer Systems (Assembly Language and C)</li>
+          <li>Database Design and Implementation</li>
+          <li>Operating Systems</li>
+          <li>Web Development (Front-End and Back-End)</li>
+        </ul>
       </section>
 
-      <section class="section"></section>
-        <h2 class="section-title">Activites</h2>
+      <!-- Activities Section -->
+      <section class="section">
+        <h2 class="section-title">Activities</h2>
+        <div class="entry">
+          <h3 class="entry-title">Hackathon Participant</h3>
+          <p class="entry-description">
+            Participated in multiple university-sponsored hackathons, developing
+            creative solutions to real-world problems using Python and
+            JavaScript.
+          </p>
+        </div>
+        <div class="entry">
+          <h3 class="entry-title">ACM Member</h3>
+          <p class="entry-description">
+            Active member of the Association for Computing Machinery (ACM)
+            student chapter, attending workshops and networking events.
+          </p>
+        </div>
       </section>
     </main>
+
+    <!-- Footer -->
     <footer class="footer">
-      © 2023 <Chenyi's Personal Webiste> | All Rights Reserved
+      © 2023 <span>Chenyi's Personal Website</span> | All Rights Reserved
     </footer>
   </body>
 </html>

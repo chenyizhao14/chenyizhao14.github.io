@@ -1,9 +1,10 @@
 :root {
   /* variables */
-  --cg-black: rgb(30, 32, 32);
-  --cg-blue: rgb(36, 94, 255);
-  --cg-grey: rgb(243, 243, 243);
-  --cg-white: rgb(255, 255, 255);
+  --cg-black: rgb(0, 0, 0);
+  --cg-purple: rgb(98, 63, 126);
+  --cg-blue: rgb(223, 177, 228);
+  --cg-grey: rgb(197, 215, 221);
+  --cg-white: rgb(239, 226, 236);
 }
 
 html {
@@ -16,7 +17,7 @@ body {
   min-height: 100vh;
   padding: 0;
   margin: 0;
-  font-family: monospace;
+  font-family: Helvetica, sans-serif;
 }
 
 /* CSS for navigation */
@@ -34,7 +35,7 @@ body {
   align-items: center;
   text-align: center;
 
-  background-color: var(--cg-black);
+  background-color: var(--cg-purple);
   color: var(--cg-white);
   padding: 0px 0px;
 
@@ -145,7 +146,7 @@ main {
 }
 
 .project-details a {
-  color: var(--cg-black);
+  color: var(--cg-purple);
   text-decoration: none;
   font-weight: bold;
   letter-spacing: 1px;
@@ -170,12 +171,19 @@ main {
 .about {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   padding: 20px;
   background-color: #f8f8f8;
-  border: 1px solid #ccc;
-  border-radius: 5px;
+  border: 5px solid #a389a7;
+  border-radius: 10px;
+  max-width: 800px;
+  margin: 0 auto;
   /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+}
+
+.about-image {
+  flex-shrink: 0;
+  margin-right: 20px;
 }
 
 .about-image img {
@@ -185,8 +193,9 @@ main {
 }
 
 .about-text {
+  max-width: 700px;
+  margin: 0 auto;
   flex: 1;
-  margin-left: 20px;
 }
 
 .about-text h2 {
@@ -199,10 +208,74 @@ main {
   line-height: 1.5;
 }
 
+.baddie {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  flex-direction: column;
+  background-color: #f8f8f8;
+  border: 5px solid #a389a7;
+  border-radius: 10px;
+  max-width: 800px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+}
+
+.baddie-image {
+  flex-shrink: 0;
+}
+
+.baddie-image img {
+  max-width: 800px;
+  border-radius: 3px;
+  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); */
+}
+
+.more-about-me {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 20px;
+  background-color: #f8f8f8;
+  border: 5px solid #a389a7;
+  border-radius: 10px;
+  max-width: 800px;
+  margin: 20px auto;
+}
+
+.more-about-image img {
+  max-width: 300px;
+  border-radius: 3px;
+  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); */
+}
+
+.more-about-image {
+  display: flex;
+  justify-content: center; /* Center the images horizontally */
+  align-items: center; /* Align the images vertically */
+  gap: 20px; /* Add space between the images */
+  margin-right: 20px;
+}
+
+.image-item {
+  text-align: center;
+}
+
+.image-item img {
+  width: 150px; /* Set the size of the image */
+  height: 250px; /* Make it a square */
+  border-radius: 95%; /* Make the image circular */
+  object-fit: cover; /* Ensure the image fits within the circle */
+  border: 2px solid #ccc;
+}
 /* CSS for resume page */
 
 .button {
-  background-color: var(--cg-black);
+  background-color: var(--cg-purple);
   border: none;
   color: var(--cg-white);
 
@@ -216,6 +289,19 @@ main {
 
 .button:hover {
   background-color: var(--cg-blue);
+}
+
+.resume.button:hover {
+  background-color: var(--cg-purple);
+  border: none;
+  color: var(--cg-white);
+
+  font-family: monospace;
+
+  padding: 5px 7px;
+  text-align: center;
+
+  border-radius: 2px;
 }
 
 .resume h2 {
@@ -255,7 +341,7 @@ form {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: var(--cg-black);
+  background-color: var(--cg-purple);
   color: var(--cg-white);
   position: absolute;
   bottom: 0;
