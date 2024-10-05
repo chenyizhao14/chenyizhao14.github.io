@@ -2,7 +2,7 @@
   /* variables */
   --cg-black: rgb(0, 0, 0);
   --cg-purple: rgb(98, 63, 126);
-  --cg-blue: rgb(223, 177, 228);
+  --cg-lpink: rgb(223, 177, 228);
   --cg-grey: rgb(197, 215, 221);
   --cg-white: rgb(239, 226, 236);
 }
@@ -65,12 +65,12 @@ body {
 }
 
 .navbar a:hover {
-  color: var(--cg-blue);
+  color: var(--cg-lpink);
   text-decoration: underline;
 }
 
 .navbar a:active {
-  color: var(--cg-blue);
+  color: var(--cg-lpink);
 }
 
 .logo a {
@@ -153,7 +153,7 @@ main {
 }
 
 .project-details a:hover {
-  color: var(--cg-blue);
+  color: var(--cg-lpink);
   text-decoration: underline;
 }
 
